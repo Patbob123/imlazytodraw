@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class imtoolazytodraw {
+    public static void main(String args[]) {
+      Scanner Scanner = new Scanner(System.in);
+      int x = Scanner.nextInt();
+      int y = Scanner.nextInt();
+      double actual;
+      
+      if(Scanner.hasNextInt()){
+          int i = Scanner.nextInt();
+          int j = Scanner.nextInt();
+          
+          actual = ((x*30.48)+(y*2.54)+((i/j)*2.54))/48;
+      }else{
+          actual = ((x*30.48)+(y*2.54))/48;
+      }
+      System.out.println(actual);
+
+      
+    }
+}
